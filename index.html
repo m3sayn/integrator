@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KidsConnect</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="logo">
-                <img src="img/logo.svg" alt="Logo">
+                <img src="img/log.svg" alt="Logo">
                 <div class="title">KidsConnect</div>
             </div>
         </header>
         <section class="main">
             <nav class="nav">
-                <ul class="nav-left">
-                    <li class="nav-left-item">Поиск</li>
-                    <li class="nav-left-item">Все</li>
-                    <li class="nav-left-item">Платные</li>
-                    <li class="nav-left-item">Бесплатные</li>
-                </ul>
-                <div class="nav-right">На карте</div>
+                <div class="nav-left">
+                    <form class="nav-left-search">
+                        <button type="submit"></button>
+                        <input type="text" placeholder="Поиск">
+                    </form>
+                    <a class="nav-left-item" href="#">Все</a>
+                    <a class="nav-left-item" href="#">Платные</a>
+                    <a class="nav-left-item" href="#">Бесплатные</a>
+                </div>
+                <button class="button-style">
+                    На карте
+                    <img src="/img/locationpointer.svg" alt="img">
+                </button>
             </nav>
             <div class="content">
                 <div class="sports">
@@ -32,10 +39,12 @@
                         <div class="item">
                             <div class="item-in">
                                 <img src="/img/pic.svg" alt="Image">
-                                <div class="temp">
+                                <div class="img-side-info">
                                     <div class="item-title">
-                                        <div class="item-title-text">Тяжелая атлетика</br>(в Юбилейном мкр.)</div>
-                                        <div class="item-free">Бесплатно</div>
+                                        <a class="item-title-text" href="item.html">Тяжелая атлетика</br>(в Юбилейном мкр.)</a>
+                                        <div class="item-title-buttons">
+                                            <button class="item-free">Бесплатно</button>
+                                        </div>
                                     </div>
                                     <div class="item-info">
                                         <div class="item-description">
@@ -54,11 +63,13 @@
                                             </div>
                                             <div class="item-line">
                                                 <img src="/img/clock.svg" alt="icon">
-                                                <div style="font-weight: 500;">Пн, Ср, Пт</div>
+                                                <div style="font-weight: 500; margin-right: 7px;">Пн, Ср, Пт</div>
                                                 <div class="time">09:00 - 10:30</div>
+                                                <div class="time">12:00 - 13:30</div>
+                                                <div class="time">18:00 - 19:30</div>
                                             </div>
                                         </div>
-                                        <div class="more-details">Подробнее</div>
+                                        <button class="more-details">Подробнее</button>
                                     </div>
                                 </div>
                             </div>
@@ -66,16 +77,116 @@
                         <div class="item">
                             <div class="item-in">
                                 <img src="/img/pic.svg" alt="Image">
+                                <div class="img-side-info">
+                                    <div class="item-title">
+                                        <div class="item-title-text">Тяжелая атлетика</br>(на ул. Боткина)</div>
+                                        <div class="item-title-buttons">
+                                            <button class="item-first-free">Первое бесплатно</button>
+                                            <button class="item-free">500 руб.</button>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-description">
+                                            <div class="hashtag">#Тяжелая атлетика</div>
+                                            <div class="item-line">
+                                                <img src="/img/person.svg" alt="icon">
+                                                <div>10-18 лет</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/location.svg" alt="icon">
+                                                <div>г. Иркутск, Юбилейный мкр., стр. 49/1</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/house.svg" alt="icon">
+                                                <div>ФОК “Юбилейный”</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/clock.svg" alt="icon">
+                                                <div style="font-weight: 500; margin-right: 7px;">Пн, Ср, Пт</div>
+                                                <div class="time">09:00 - 10:30</div>
+                                                <div class="time">12:00 - 13:30</div>
+                                            </div>
+                                        </div>
+                                        <button class="more-details">Подробнее</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="item-in">
                                 <img src="/img/pic.svg" alt="Image">
+                                <div class="img-side-info">
+                                    <div class="item-title">
+                                        <div class="item-title-text">Тяжелая атлетика</br>(на ул. Норильской)</div>
+                                        <div class="item-title-buttons">
+                                            <button class="item-first-free">Первое бесплатно</button>
+                                            <button class="item-free">3200 руб. 8 занятий</button>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-description">
+                                            <div class="hashtag">#Тяжелая атлетика</div>
+                                            <div class="item-line">
+                                                <img src="/img/person.svg" alt="icon">
+                                                <div>10-18 лет</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/location.svg" alt="icon">
+                                                <div>г. Иркутск, Юбилейный мкр., стр. 49/1</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/house.svg" alt="icon">
+                                                <div>ФОК “Юбилейный”</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/clock.svg" alt="icon">
+                                                <div style="font-weight: 500; margin-right: 7px;">Пн, Ср, Пт</div>
+                                                <div class="time">09:00 - 10:30</div>
+                                                <div class="time">12:00 - 13:30</div>
+                                                <div class="time">18:00 - 19:30</div>
+                                            </div>
+                                        </div>
+                                        <button class="more-details">Подробнее</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="item-in">
                                 <img src="/img/pic.svg" alt="Image">
+                                <div class="img-side-info">
+                                    <div class="item-title">
+                                        <div class="item-title-text">Пауэрлифтинг</div>
+                                        <div class="item-title-buttons">
+                                            <button class="item-free">Бесплатно</button>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-description">
+                                            <div class="hashtag">#Пауэрлифтинг</div>
+                                            <div class="item-line">
+                                                <img src="/img/person.svg" alt="icon">
+                                                <div>10-18 лет</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/location.svg" alt="icon">
+                                                <div>г. Иркутск, Юбилейный мкр., стр. 49/1</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/house.svg" alt="icon">
+                                                <div>ФОК “Юбилейный”</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/clock.svg" alt="icon">
+                                                <div style="font-weight: 500; margin-right: 7px;">Пн, Ср, Пт</div>
+                                                <div class="time">09:00 - 10:30</div>
+                                                <div class="time">12:00 - 13:30</div>
+                                                <div class="time">18:00 - 19:30</div>
+                                            </div>
+                                        </div>
+                                        <button class="more-details">Подробнее</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -85,27 +196,465 @@
                         <div class="item">
                             <div class="item-in">
                                 <img src="/img/pic.svg" alt="Image">
+                                <div class="img-side-info">
+                                    <div class="item-title">
+                                        <div class="item-title-text">Дзюдо</div>
+                                        <div class="item-title-buttons">
+                                            <button class="item-free">Бесплатно</button>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-description">
+                                            <div class="hashtag">#Дзюдо</div>
+                                            <div class="item-line">
+                                                <img src="/img/person.svg" alt="icon">
+                                                <div>6-18 лет</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/location.svg" alt="icon">
+                                                <div>г. Иркутск, ул Трудовая, д 115А</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/house.svg" alt="icon">
+                                                <div>СК “Вымпел”</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/clock.svg" alt="icon">
+                                                <div style="font-weight: 500; margin-right: 7px;">Пн, Ср, Пт</div>
+                                                <div class="time">09:00 - 10:30</div>
+                                                <div class="time">12:00 - 13:30</div>
+                                                <div class="time">18:00 - 19:30</div>
+                                            </div>
+                                        </div>
+                                        <button class="more-details">Подробнее</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="item-in">
                                 <img src="/img/pic.svg" alt="Image">
+                                <div class="img-side-info">
+                                    <div class="item-title">
+                                        <div class="item-title-text">Вольная борьба<br>на ул. Норильская</div>
+                                        <div class="item-title-buttons">
+                                            <button class="item-first-free">Первое бесплатно</button>
+                                            <button class="item-free">3200 руб. в месяц</button>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-description">
+                                            <div class="hashtag">#Дзюдо</div>
+                                            <div class="item-line">
+                                                <img src="/img/person.svg" alt="icon">
+                                                <div>6-18 лет</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/location.svg" alt="icon">
+                                                <div>г. Иркутск, ул Трудовая, д 115А</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/house.svg" alt="icon">
+                                                <div>СК “Вымпел”</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/clock.svg" alt="icon">
+                                                <div style="font-weight: 500; margin-right: 7px;">Пн, Ср, Пт</div>
+                                                <div class="time">09:00 - 10:30</div>
+                                                <div class="time">12:00 - 13:30</div>
+                                                <div class="time">18:00 - 19:30</div>
+                                            </div>
+                                        </div>
+                                        <button class="more-details">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-title">Единоборства</div>
+                    <div class="sport-containter">
+                        <div class="item">
+                            <div class="item-in">
+                                <img src="/img/pic.svg" alt="Image">
+                                <div class="img-side-info">
+                                    <div class="item-title">
+                                        <div class="item-title-text">Дзюдо</div>
+                                        <div class="item-title-buttons">
+                                            <button class="item-free">Бесплатно</button>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-description">
+                                            <div class="hashtag">#Дзюдо</div>
+                                            <div class="item-line">
+                                                <img src="/img/person.svg" alt="icon">
+                                                <div>6-18 лет</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/location.svg" alt="icon">
+                                                <div>г. Иркутск, ул Трудовая, д 115А</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/house.svg" alt="icon">
+                                                <div>СК “Вымпел”</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/clock.svg" alt="icon">
+                                                <div style="font-weight: 500; margin-right: 7px;">Пн, Ср, Пт</div>
+                                                <div class="time">09:00 - 10:30</div>
+                                                <div class="time">12:00 - 13:30</div>
+                                                <div class="time">18:00 - 19:30</div>
+                                            </div>
+                                        </div>
+                                        <button class="more-details">Подробнее</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="item-in">
                                 <img src="/img/pic.svg" alt="Image">
+                                <div class="img-side-info">
+                                    <div class="item-title">
+                                        <div class="item-title-text">Вольная борьба<br>на ул. Норильская</div>
+                                        <div class="item-title-buttons">
+                                            <button class="item-free">3200 руб. в месяц</button>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-description">
+                                            <div class="hashtag">#Дзюдо</div>
+                                            <div class="item-line">
+                                                <img src="/img/person.svg" alt="icon">
+                                                <div>6-18 лет</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/location.svg" alt="icon">
+                                                <div>г. Иркутск, ул Трудовая, д 115А</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/house.svg" alt="icon">
+                                                <div>СК “Вымпел”</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/clock.svg" alt="icon">
+                                                <div style="font-weight: 500; margin-right: 7px;">Пн, Ср, Пт</div>
+                                                <div class="time">09:00 - 10:30</div>
+                                                <div class="time">12:00 - 13:30</div>
+                                                <div class="time">18:00 - 19:30</div>
+                                            </div>
+                                        </div>
+                                        <button class="more-details">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-title">Единоборства</div>
+                    <div class="sport-containter">
+                        <div class="item">
+                            <div class="item-in">
+                                <img src="/img/pic.svg" alt="Image">
+                                <div class="img-side-info">
+                                    <div class="item-title">
+                                        <div class="item-title-text">Дзюдо</div>
+                                        <div class="item-title-buttons">
+                                            <button class="item-free">Бесплатно</button>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-description">
+                                            <div class="hashtag">#Дзюдо</div>
+                                            <div class="item-line">
+                                                <img src="/img/person.svg" alt="icon">
+                                                <div>6-18 лет</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/location.svg" alt="icon">
+                                                <div>г. Иркутск, ул Трудовая, д 115А</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/house.svg" alt="icon">
+                                                <div>СК “Вымпел”</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/clock.svg" alt="icon">
+                                                <div style="font-weight: 500; margin-right: 7px;">Пн, Ср, Пт</div>
+                                                <div class="time">09:00 - 10:30</div>
+                                                <div class="time">12:00 - 13:30</div>
+                                                <div class="time">18:00 - 19:30</div>
+                                            </div>
+                                        </div>
+                                        <button class="more-details">Подробнее</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="item-in">
                                 <img src="/img/pic.svg" alt="Image">
+                                <div class="img-side-info">
+                                    <div class="item-title">
+                                        <div class="item-title-text">Вольная борьба<br>на ул. Норильская</div>
+                                        <div class="item-title-buttons">
+                                            <button class="item-first-free">Первое бесплатно</button>
+                                            <button class="item-free">3200 руб. в месяц</button>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-description">
+                                            <div class="hashtag">#Дзюдо</div>
+                                            <div class="item-line">
+                                                <img src="/img/person.svg" alt="icon">
+                                                <div>6-18 лет</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/location.svg" alt="icon">
+                                                <div>г. Иркутск, ул Трудовая, д 115А</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/house.svg" alt="icon">
+                                                <div>СК “Вымпел”</div>
+                                            </div>
+                                            <div class="item-line">
+                                                <img src="/img/clock.svg" alt="icon">
+                                                <div style="font-weight: 500; margin-right: 7px;">Пн, Ср, Пт</div>
+                                                <div class="time">09:00 - 10:30</div>
+                                                <div class="time">12:00 - 13:30</div>
+                                                <div class="time">18:00 - 19:30</div>
+                                            </div>
+                                        </div>
+                                        <button class="more-details">Подробнее</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="filters">
                     <div class="content-title">Фильтры</div>
+                    <div class="filter-container">
+                        <div class="filter-title">Возраст</div>
+                        <select class="filter-age">
+                            <option label="Любой" value="1" selected>Любой</option>
+                            <option>6-10 лет</option>
+                            <option>10-18 лет</option>
+                        </select>
+                        <div class="filter-sex">
+                            <div class="filter-title">Пол</div>
+                            <div class="checkboxes">
+                                <label>
+                                    <input type="checkbox">
+                                    <span></span>
+                                    Мужской
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span></span>
+                                    Женский
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-title">Каталог</div>
+                        <details>
+                            <summary>
+                                <div class="summary-title">
+                                    <div>Силовой спорт</div>
+                                    <div>3</div>
+                                </div>
+                            </summary>
+                            <article>
+                               <ul>
+                                <li>Тяжелая атлетика 3</li>
+                                <li>Пауэрлифтинг 1</li>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>
+                                <div class="summary-title">
+                                    <div>Единоборства</div>
+                                    <div>2</div>
+                                </div>
+                            </summary>
+                            <article>
+                               <ul>
+                                <li>Вольная борьба 1</li>
+                                <li>Дзюдо 1</li>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>ДПИ и ремесла</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Техническое конструирование</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Словесность</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Иностранные языки</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Развитие интеллекта</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Информационные технологии</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>История и Традиции</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Педагогика</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Музыка и звук</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Пение</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Хореография(танцы)</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Зрелищные искусства</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Мода и стиль</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Познавательные развлечения</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Туризм</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Естественные науки</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Люди и животные</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Эстетические виды спорта</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Технические виды спорта</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Командно-игровой спорт</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Индивидуально игровой спорт</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Водные виды спорта</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Лёгкая атлетика и гимнастика</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                        <details>
+                            <summary>Физкультура</summary>
+                            <article>
+                               <ul>
+                               </ul>
+                            </article>
+                        </details>
+                    </div>
                 </div>
             </div>
         </section>
